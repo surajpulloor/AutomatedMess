@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessProviderOrderDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:text="Order Given By:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_below="@+id/textView30"
+            android:text="Mess Rocks"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_customerAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/orderDetails_customerContact"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_marginBottom="-92dp"
+            android:text="Near Kharadi IT Park, Pune - 411015"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_customerContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="98dp"
+            android:text="Mobile No. +91 8552004340, Phone No. (020) 27031460"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/orderDetails_listView"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:layout_above="@+id/textView35"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/orderDetails_customerAddress"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="179dp"
+            android:text="Total Amount Paid"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_totalAmountCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView35"
+            android:layout_below="@+id/textView35"
+            android:layout_marginTop="-179dp"
+            android:text="₹ 120.36"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_convCharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/orderDetails_totalAmountCustomer"
+            android:layout_marginEnd="42dp"
+            android:text="- ₹ 20 (Conv. charges 10%)"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_totalAmountMessProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView35"
+            android:layout_below="@+id/orderDetails_convCharges"
+            android:text="₹ 100.36"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/orderDetails_acceptBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/orderDetails_convCharges"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:text="Accept" />
+
+        <Button
+            android:id="@+id/orderDetails_okBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/orderDetails_acceptBtn"
+            android:layout_centerHorizontal="true"
+            android:text="Ok"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/orderDetails_orderStatus"
+            android:layout_width="66dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView30"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/confirmation_pending" />
+
+        <Button
+            android:id="@+id/orderDetails_declineBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/orderDetails_acceptBtn"
+            android:layout_marginStart="42dp"
+            android:text="Decline" />
+    </RelativeLayout>
+</FrameLayout>

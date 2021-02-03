@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessProviderOrderDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:text="Order Given To:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_messName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_below="@+id/textView30"
+            android:text="Mess Rocks"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_messAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_marginTop="63dp"
+            android:text="Near Kharadi IT Park, Pune - 411015"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_messContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="98dp"
+            android:text="Mobile No. +91 8552004340, Phone No. (020) 27031460"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/orderDetails_listView"
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="168dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="154dp"
+            android:text="Total Amount Paid"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/orderDetails_totalAmountCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="108dp"
+            android:layout_toEndOf="@+id/orderDetails_messName"
+            android:text="₹ 120.36"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/orderDetails_orderStatus"
+            android:layout_width="66dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView30"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/confirmation_pending" />
+
+        <Button
+            android:id="@+id/orderDetails_cancelOrderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_toEndOf="@+id/orderDetails_messName"
+            android:text="Cancel Order" />
+
+    </RelativeLayout>
+</FrameLayout>

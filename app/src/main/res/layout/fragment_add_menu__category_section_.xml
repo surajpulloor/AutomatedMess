@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.ams.automatedmess.AddMenu_CategorySection_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/categoryNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="98dp"
+            android:text="Category Name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/categoryNameLabel"
+            android:layout_below="@+id/categoryNameLabel"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/categoryName"
+            android:layout_below="@+id/categoryName"
+            android:layout_marginTop="29dp"
+            android:text="Veg/Non-Veg"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/veg_nonveg_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="17dp"
+            android:prompt="@string/veg_nonveg_prompt"
+            android:entries="@array/veg_nonveg_items"/>
+
+        <Button
+            android:id="@+id/addMenuProceedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/veg_nonveg_spinner"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/categoryName"
+            android:text="Ok" />
+    </RelativeLayout>
+
+</FrameLayout>

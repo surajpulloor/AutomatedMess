@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.ams.automatedmess.AddMenu_AddItems_Fragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/addItemsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/itemNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_toEndOf="@+id/serialNumber"
+                android:text="Item Name"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/rupeeSymboltextView1"
+                android:text="Price"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/itemName1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/itemNameTextView"
+                android:layout_alignTop="@+id/rupeeSymboltextView1"
+                android:inputType="textImeMultiLine" />
+
+            <TextView
+                android:id="@+id/rupeeSymboltextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/itemPrice1"
+                android:layout_toStartOf="@+id/itemPrice1"
+                android:text="₹"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/itemPrice1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/priceTextView"
+                android:layout_marginTop="23dp"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/itemName2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/itemName1"
+                android:layout_below="@+id/itemName1"
+                android:layout_marginTop="12dp"
+                android:inputType="textImeMultiLine" />
+
+            <TextView
+                android:id="@+id/rupeeSymboltextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/rupeeSymboltextView1"
+                android:layout_alignTop="@+id/itemName2"
+                android:text="₹"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/itemPrice2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rupeeSymboltextView2"
+                android:layout_toEndOf="@+id/rupeeSymboltextView2"
+                android:layout_toRightOf="@+id/rupeeSymboltextView2"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/itemName3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/itemName2"
+                android:layout_below="@+id/itemName2"
+                android:layout_marginTop="14dp"
+                android:inputType="textImeMultiLine" />
+
+            <TextView
+                android:id="@+id/rupeeSymboltextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/itemName3"
+                android:layout_toStartOf="@+id/itemPrice2"
+                android:text="₹"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/itemPrice3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rupeeSymboltextView3"
+                android:layout_toEndOf="@+id/rupeeSymboltextView3"
+                android:layout_toRightOf="@+id/rupeeSymboltextView3"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/menuSaveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/itemName3"
+                android:layout_marginTop="13dp"
+                android:text="Save" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addMenuItemsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/itemPrice3"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/serialNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/itemNameTextView"
+                android:layout_alignBottom="@+id/itemNameTextView"
+                android:layout_alignStart="@+id/serialNum1"
+                android:text="No."
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/serialNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/serialNumber"
+                android:layout_marginTop="30dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/serialNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/serialNum1"
+                android:layout_marginTop="19dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/serialNum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/serialNum2"
+                android:layout_marginTop="19dp"
+                android:textSize="30sp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.ams.automatedmess.MessInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/messInfoBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Brand Name"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/messInfoBrandName"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="26dp"
+            android:text="Address"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/messInfoAddressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="9dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/messInfoAddressBar"
+            android:layout_marginTop="14dp"
+            android:text="Phone No."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/messInfoPhoneNoBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_below="@+id/messInfoPhoneNoBar"
+            android:layout_marginTop="15dp"
+            android:text="Mobile No."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/messInfoMobileNoBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView18"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="8dp" />
+
+        <Button
+            android:id="@+id/messInfoPlaceOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/messInfoMobileNoBar"
+            android:layout_marginTop="22dp"
+            android:text="Place Order" />
+
+        <TextView
+            android:id="@+id/average_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="56dp"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/ratingStarImg"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="104dp"
+            android:src="@android:drawable/btn_star_big_on" />
+
+    </RelativeLayout>
+</FrameLayout>
